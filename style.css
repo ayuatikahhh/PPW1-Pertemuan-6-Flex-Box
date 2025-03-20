@@ -1,0 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body{
+    background-color: #ebf0f7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+.container{
+    display: flex;
+    background: white;
+    border-radius: 10px;
+    width: 600px;
+    box-shadow:0px 4px 10px rgba(0, 0, 0, 0.3);
+    
+}
+
+.container-items{
+    padding:30px 30px 0px 30px;
+    width: 60%;
+}
+.container-items h2{
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.container-items p {
+    font-size: 10px;
+    color: #777;
+    margin-bottom: 15px;
+}
+
+.image-prime{
+    width: 40%;
+    object-fit: cover;
+    border-radius: 10px 0px 0px 10px;
+}
+
+
+.image-person {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+}
+.biodata{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.info{
+    flex:1; 
+    margin-top: 7px; 
+    margin-left: 10px; 
+}
+
+.name{
+    font-weight: bold;
+    font-size: 11px;
+}
+.info p {
+    font-size: 10px;
+    color: #777;
+}
+
+.btn-share{
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+@media (max-width: 600px){
+    .container{
+        width: 300px;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow:0px 4px 10px rgba(0, 0, 0, 0.1)
+    }
+
+    .image-prime{
+        width: 300px;
+        object-fit: cover;
+        border-radius: 10px 10px 0px 0px;
+    }
+
+    .container-items{
+        width: 100%;
+        padding:30px 20px 10px 20px;
+    }
+
+    .container-items p {
+        padding-bottom: 5px;
+        margin: 0;
+    }
+}
